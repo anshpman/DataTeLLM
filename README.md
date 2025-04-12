@@ -9,10 +9,10 @@ DataTeLLM is a Python-based tool designed to accelerate the initial Exploratory 
 # Key Features
 
 * **Automated EDA:** Performs core analysis including:
-    * Dataset shape, head, tail, data types.
-    * Descriptive statistics for all columns.
-    * Missing value identification and quantification.
-    * Cardinality analysis (unique values).
+    * Dataset shape, head, tail, data types
+    * Descriptive statistics for all columns
+    * Missing value identification and quantification
+    * Cardinality analysis (unique values)
 * **Visualizations:** Generates and embeds (Base64):
     * Histograms for numerical features
     * Count plots for categorical features
@@ -38,8 +38,7 @@ DataTeLLM is a Python-based tool designed to accelerate the initial Exploratory 
 * **Analysis:** Scikit-learn (StandardScaler, SimpleImputer, KMeans, IsolationForest, PCA), Statsmodels
 * **LLM:** google-generativeai (Google Gemini API)
 * **Reporting:** WeasyPrint (for PDF), IPython (for notebook display)
-* **Environment:** Developed in Kaggle Notebooks
-## How It Works: The DataTeLLM Pipeline
+* **Environment:** Developed in Kaggle Notebooks## How It Works: The DataTeLLM Pipeline
 
 DataTeLLM follows a structured pipeline to analyze the input dataset and generate the final report:
 
@@ -73,28 +72,47 @@ DataTeLLM follows a structured pipeline to analyze the input dataset and generat
     * If WeasyPrint is installed, the `create_pdf_from_html` function takes the generated HTML content and converts it into the final PDF report.
 
 This sequential process, combined with LLM integration at the interpretation stage, allows DataTeLLM to produce a comprehensive and insightful initial analysis report automatically.
-## Example of Titanic Dataset
+## Overview of Titanic Dataset
+![Overview of Titanic Dataset](https://github.com/anshpman/DataTeLLM/blob/b02be0c7a29b26b2efe78531ff171750a2164adb/Example%20%3A%20Titanic%20Dataset/Overview%20Titanic%20Dataset.png)
 
- This dataset contains information on 418 passengers, including their survival status
- (Survived), passenger class (Pclass), sex (Sex), age (Age), and other details.
- Analysis of this data could reveal correlations between survival and factors like
- passenger class, age, and gender. Understanding these relationships may provide
- insights into the dynamics of survival during the Titanic disaster
- 
-## Example of Student Mental Health Dataset
+This dataset contains information on 418 passengers, including their survival status (Survived), passenger class (Pclass), sex (Sex), age (Age), and other details. Analysis of this data could reveal correlations between survival and factors like passenger class, age, and gender. Understanding these relationships may provide insights into the dynamics of survival during the Titanic disaster.
+
+## Visualizations
+![Visualizations](https://github.com/anshpman/DataTeLLM/blob/b02be0c7a29b26b2efe78531ff171750a2164adb/Example%20%3A%20Titanic%20Dataset/Visualizations%20Titanic%20Dataset.png)
+
+Including visual representations of survival rates by categories like gender, age group, or passenger class can provide intuitive insights. Common visualizations include bar plots, pie charts, and histograms showcasing these factors.
+
+## Data Nuances
+![Data Nuances](https://github.com/anshpman/DataTeLLM/blob/b02be0c7a29b26b2efe78531ff171750a2164adb/Example%20%3A%20Titanic%20Dataset/Data%20Nuances%20Titanic%20Dataset.png)
+
+Certain nuances in the dataset, such as missing values in the Age column or imbalances in survival rates across classes, should be noted. Addressing these details is crucial for accurate analysis and modeling.
+
+## PCA (Principal Component Analysis)
+![PCA](https://github.com/anshpman/DataTeLLM/blob/b02be0c7a29b26b2efe78531ff171750a2164adb/Example%20%3A%20Titanic%20Dataset/PCA%20Titanic%20Dataset.png)
+
+PCA can be used to reduce the dimensionality of the dataset, identifying the most significant variables that affect survival while simplifying the analysis.
+
+## LLM Implications
+![LLM Implications](https://github.com/anshpman/DataTeLLM/blob/b02be0c7a29b26b2efe78531ff171750a2164adb/Example%20%3A%20Titanic%20Dataset/LLM%20Implications%20Titanic%20Dataset.png)
+
+Exploring how large language models (LLMs) can generate hypotheses or extract patterns from textual descriptions of the Titanic dataset demonstrates the intersection of AI with exploratory data analysis.
+## Overview of Student Mental Health Dataset
+![Overview of Student Mental Health Dataset](https://github.com/anshpman/DataTeLLM/blob/b02be0c7a29b26b2efe78531ff171750a2164adb/Example%20%3A%20Student%20Depression%20Dataset/Overview%20Depression%20Dataset.png)
 
 This dataset contains information on 27,901 individuals, encompassing their gender, age, and various factors related to mental health. The data includes details on academic and work pressure, sleep duration, dietary habits, and family history of mental illness, among other variables. Analysis of this data could reveal correlations between these factors and the prevalence of depression.
 
-**Section: Overview (showing selected columns and note)**
-*[Insert Screenshot of Head/Tail table like image_7a5e52.png]*
+## Data Nuances
+![Data Nuances](https://github.com/anshpman/DataTeLLM/blob/b02be0c7a29b26b2efe78531ff171750a2164adb/Example%20%3A%20Student%20Depression%20Dataset/Data%20Nuances%20Student%20Depression%20Dataset.png)
 
-**Section: Clustering Visualization**
-*[Insert Screenshot of the PCA Scatter Plot like the one in image_85bc17.png]*
+The dataset may include nuances like missing values for some variables, imbalances in representation across demographics, or the influence of external factors. Addressing these nuances is key for reliable analysis and interpretation.
 
-**Section: Risk Identification Summary**
-*[Insert Screenshot of the Risk ID text from the report]*
+## Insights
+![Insights](https://github.com/anshpman/DataTeLLM/blob/b02be0c7a29b26b2efe78531ff171750a2164adb/Example%20%3A%20Student%20Depression%20Dataset/Insights%20Student%20Depression%20Dataset.png)
 
-**Section: LLM Suggestions (Example from Correlation)**
-*[Insert Screenshot of one of the suggestion boxes]*
+Key insights can be derived about how academic and work pressure, sleep duration, and dietary habits correlate with mental health. Patterns in the data can highlight the prevalence of depression among different age groups, genders, or individuals with specific lifestyle habits.
 
-*[Optional: Link to a full sample analysis_report_final.pdf file]*
+## Visualizations
+![Visualizations](https://github.com/anshpman/DataTeLLM/blob/b02be0c7a29b26b2efe78531ff171750a2164adb/Example%20%3A%20Student%20Depression%20Dataset/Visualizations%20Student%20Depression%20Dataset.png)
+
+## Correlation Visualizations
+![Correlation Visualizations](https://github.com/anshpman/DataTeLLM/blob/b02be0c7a29b26b2efe78531ff171750a2164adb/Example%20%3A%20Student%20Depression%20Dataset/Correlation%20Analysis%20Student%20Depression%20Dataset.png)
