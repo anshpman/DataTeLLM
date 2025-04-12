@@ -38,7 +38,9 @@ DataTeLLM is a Python-based tool designed to accelerate the initial Exploratory 
 * **Analysis:** Scikit-learn (StandardScaler, SimpleImputer, KMeans, IsolationForest, PCA), Statsmodels
 * **LLM:** google-generativeai (Google Gemini API)
 * **Reporting:** WeasyPrint (for PDF), IPython (for notebook display)
-* **Environment:** Developed in Kaggle Notebooks## How It Works: The DataTeLLM Pipeline
+* **Environment:** Developed in Kaggle Notebooks
+
+## How It Works: The DataTeLLM Pipeline
 
 DataTeLLM follows a structured pipeline to analyze the input dataset and generate the final report:
 
