@@ -9,25 +9,25 @@ DataTeLLM is a Python-based tool designed to accelerate the initial Exploratory 
 # Key Features
 
 * **Automated EDA:** Performs core analysis including:
-    * Dataset shape, head, tail, data types[cite: 1].
-    * Descriptive statistics for all columns[cite: 5, 6, 7].
-    * Missing value identification and quantification[cite: 15].
-    * Cardinality analysis (unique values)[cite: 11, 12].
+    * Dataset shape, head, tail, data types.
+    * Descriptive statistics for all columns.
+    * Missing value identification and quantification.
+    * Cardinality analysis (unique values).
 * **Visualizations:** Generates and embeds (Base64):
-    * Histograms for numerical features[cite: 28, 29].
-    * Count plots for categorical features[cite: 30, 31].
-    * Correlation matrix heatmap[cite: 40].
-    * PCA scatter plot for clustering results[cite: 68].
+    * Histograms for numerical features
+    * Count plots for categorical features
+    * Correlation matrix heatmap
+    * PCA scatter plot for clustering results
 * **Advanced Analysis:** Includes:
-    * Correlation analysis with identification of highly correlated pairs[cite: 40].
-    * Anomaly detection using Isolation Forest[cite: 59, 60, 61].
-    * Clustering using K-Means (K=4 default)[cite: 63, 64].
-    * Time Series applicability check[cite: 97].
+    * Correlation analysis with identification of highly correlated pairs
+    * Anomaly detection using Isolation Forest
+    * Clustering using K-Means (K=4 default)
+    * Time Series applicability check
 * **LLM Integration (Google Gemini):**
-    * Generates narratives explaining analysis results[cite: 1, 5, 11, 25, 32, 59, 62].
-    * Provides suggestions/implications based on findings (missing data, skew, correlation, clusters)[cite: 18, 32, 41, 69].
-    * Synthesizes a data quality risk summary[cite: 88, 89, 90, 91, 92].
-    * Offers speculative domain insights based on column names/types[cite: 94, 95, 96].
+    * Generates narratives explaining analysis results
+    * Provides suggestions/implications based on findings (missing data, skew, correlation, clusters)
+    * Synthesizes a data quality risk summary
+    * Offers speculative domain insights based on column names/types
 * **Reporting:** Outputs comprehensive reports in both:
     * HTML format.
     * PDF format (requires WeasyPrint).
